@@ -13,6 +13,10 @@ svg {
     -moz-animation: AnimationName 21s ease infinite;
     -o-animation: AnimationName 21s ease infinite;
     animation: AnimationName 21s ease infinite;
+    rx: 6px;
+    ry: 6px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
 }
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 49%}
