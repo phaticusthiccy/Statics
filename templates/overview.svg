@@ -63,7 +63,7 @@ body {
   }
 
   @for $i from 1 through $star-count {
-    &:nth-child(#{$i}) {
+    &: nth-child(#{$i}) {
       --star-tail-length: #{random_range(500em, 750em) / 100};
       --top-offset: #{random_range(0vh, 10000vh) / 100};
       --fall-duration: #{random_range(6000, 12000s) / 1000};
