@@ -6,117 +6,25 @@ svg {
   font-size: 14px;
   line-height: 21px;
 }
-@mixin sp-layout {
-  @media screen and (max-width: 750px) {
-    @content;
-  }
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-  overflow: hidden;
-}
-
-@function random_range($min, $max) {
-  $rand: random();
-  $random_range: $min + floor($rand * (($max - $min) + 1));
-  @return $random_range;
-}
-
-.stars {
-  position: fixed;
-  top: 0;
-  left: 0;
+.element {
   width: 100%;
-  height: 120%;
-  transform: rotate(-45deg);
+  height: 100%;
+  animation: pulse 5s infinite;
 }
 
-.star {
-  $star-count: 50;
-  --star-color: var(--primary-color);
-  --star-tail-length: 6em;
-  --star-tail-height: 2px;
-  --star-width: calc(var(--star-tail-length) / 6);
-  --fall-duration: 9s;
-  --tail-fade-duration: var(--fall-duration);
-
-  position: absolute;
-  top: var(--top-offset);
-  left: 0;
-  width: var(--star-tail-length);
-  height: var(--star-tail-height);
-  color: var(--star-color);
-  background: linear-gradient(45deg, currentColor, transparent);
-  border-radius: 50%;
-  filter: drop-shadow(0 0 6px currentColor);
-  transform: translate3d(104em, 0, 0);
-  animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
- 
-
-  @for $i from 1 through $star-count {
-    &: nth-child(#{$i}) {
-      --star-tail-length: #{random_range(500em, 750em) / 100};
-      --top-offset: #{random_range(0vh, 10000vh) / 100};
-      --fall-duration: #{random_range(6000, 12000s) / 1000};
-      --fall-delay: #{random_range(0, 10000s) / 1000};
-    }
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
   }
-
-  &::before, &::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: calc(var(--star-width) / -2);
-    width: var(--star-width);
-    height: 100%;
-    background: linear-gradient(45deg, transparent, currentColor, transparent);
-    border-radius: inherit;
-    animation: blink 2s linear infinite;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-}
-
-@keyframes fall {
-  to {
-    transform: translate3d(-30em, 0, 0);
-  }
-}
-
-@keyframes tail-fade {
-  0%, 50% {
-    width: var(--star-tail-length);
-    opacity: 1;
-  }
-
-  70%, 80% {
-    width: 0;
-    opacity: 0.4;
-  }
-
   100% {
-    width: 0;
-    opacity: 0;
+    background-color: #FF4136;
   }
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0.6;
-  }
+html,
+body {
+  height: 100%;
 }
-
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
@@ -170,7 +78,7 @@ tr {
 }
 </style>
 <g>
-<rect x="5" y="5" id="background" />
+<rect x="5" y="5" id="element" />
 <g>
 <foreignObject x="21" y="21" width="318" height="168">
 <div xmlns="http://www.w3.org/1999/xhtml">
@@ -180,58 +88,7 @@ tr {
 <th colspan="2">{{ name }}'s GitHub Statistics</th>
 </tr></thead>
 <tbody>
-<div class="stars">
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-</div>
+
 <tr><td><svg class="octicon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" width="16" height="16"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>Stars</td><td>{{ stars }}</td></tr>
 
 <tr style="animation-delay: 150ms"><td><svg class="octicon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>Forks</td><td>{{ forks }}</td></tr>
