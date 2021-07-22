@@ -10,11 +10,7 @@ svg {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   animation: pulse 5s infinite;
-  fill: black;
-  stroke: rgb(225, 228, 232);
-  stroke-width: 1px;
-  rx: 6px;
-  ry: 6px;
+  
 }
 
 @keyframes pulse {
