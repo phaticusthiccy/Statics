@@ -16,6 +16,8 @@ svg {
     ry: 10px;
     width: calc(100% - 10px);
     height: calc(100% - 10px);
+    stroke: rgb(225, 228, 232);
+    stroke-width: 1px;
 }
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 49%}
