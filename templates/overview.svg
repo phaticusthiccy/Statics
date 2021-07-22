@@ -7,8 +7,8 @@ svg {
   line-height: 21px;
 }
 .element {
-  width: 100%;
-  height: 100%;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
   animation: pulse 5s infinite;
 }
 
@@ -82,7 +82,6 @@ tr {
 <g>
 <foreignObject x="21" y="21" width="318" height="168">
 <div xmlns="http://www.w3.org/1999/xhtml">
-<div class="element"></div>
 
 <table>
 <thead><tr style="transform: translateX(0);">
