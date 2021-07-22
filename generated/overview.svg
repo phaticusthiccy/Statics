@@ -1,42 +1,60 @@
 <svg width="720" height="420" xmlns="http://www.w3.org/2000/svg">
+<style>
+           <defs>
+			<linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+		      <stop offset="6.25%" style="stop-color:#87FFFE;"/>
+		      <stop offset="18.75%" style="stop-color:#88FF89;"/>
+		      <stop offset="31.25%" style="stop-color:#F8F58A;"/>
+		      <stop offset="43.75%" style="stop-color:#EF696A;"/>
+		      <stop offset="56.25%" style="stop-color:#F36ABA;"/>
+		      <stop offset="68.75%" style="stop-color:#EF696A;"/>
+		      <stop offset="81.25%" style="stop-color:#F8F58A;"/>
+		      <stop offset="93.75%" style="stop-color:#88FF89;"/>
+		      <stop offset="100%" style="stop-color:#87FFFE;"/>
+		    </linearGradient>
+	    </defs>
+
+	    <pattern id="pattern" x="0" y="0" width="400%" height="100%" patternUnits="userSpaceOnUse">
+	      <rect x="-150%" y="0" width="200%" height="100%" fill="url(#gradient)" transform="rotate(-65)">
+	        <animate attributeType="XML"
+	                 attributeName="x"
+	                 from="-150%" to="50%"
+	                 dur="6s"
+	                 repeatCount="indefinite"/>
+	      </rect>
+	      <rect x="-350%" y="0" width="200%" height="100%" fill="url(#gradient)" transform="rotate(-65)">
+	        <animate attributeType="XML"
+	                 attributeName="x"
+	                 from="-350%" to="-150%"
+	                 dur="6s"
+	                 repeatCount="indefinite"/>
+	      </rect>
+	    </pattern>
+    
+	    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	    	
+	        <g id="junglebug">
+	            <g id="Fill-1-Clipped">
+	                <mask id="mask-2" fill="white">
+	                    <use xlink:href="#path-1"></use>
+	                </mask>
+	                <g id="path-1"></g>
+	                <path d="M47.76201,37.2875647 L28.79811,46.8794704 L28.79811,28.2616913 L47.82321,18.6869108 C47.84481,18.8698798 47.76201,19.0555529 47.76201,19.2430286 L47.76201,37.2875647 Z M26.22231,24.0984688 L7.62291,14.7850728 L26.13591,5.48068984 L44.80461,14.7931847 L26.22231,24.0984688 Z M23.88141,46.8794704 L4.56561,37.2875648 L4.56561,19.227706 C4.56561,19.044737 4.65831,18.8644719 4.67811,18.6860094 L23.88141,28.2616913 L23.88141,46.8794704 Z M23.88141,70.860136 L7.29261,62.5931788 C5.66001,61.7756767 4.56561,60.1316588 4.56561,58.3037707 L4.56561,42.6495499 L23.88141,52.2414556 L23.88141,70.860136 Z M47.31201,10.5578563 L47.28321,10.5578563 L28.16361,1.07681355 C26.89821,0.444984388 25.38171,0.47292548 24.11811,1.10745862 L5.22621,10.6425809 C1.96911,12.2802892 -9e-05,15.5773379 -9e-05,19.227706 L-9e-05,58.3037707 C-9e-05,61.9604482 1.99701,65.2475824 5.26221,66.8825867 L23.88141,76.2221214 L23.88141,86.5269756 L28.79811,86.5269756 L28.79811,76.2221214 L28.79811,70.860136 L28.79811,52.2468637 L28.79811,52.2414556 L47.76201,42.6495499 L47.76201,58.3037707 C47.76201,60.1316588 46.73151,61.7756767 45.09891,62.5931788 L33.36291,68.461709 L33.36291,73.8236943 L47.30391,66.8825867 C50.57001,65.2475824 52.67871,61.9604482 52.67871,58.3037707 L52.67871,19.2430286 C52.67871,15.5800418 50.58621,12.3163423 47.31201,10.5578563 Z" id="Fill-1" fill="url(#pattern)" fill-rule="nonzero"></path>
+	            </g>
+	        </g>
+	    </g>
 
 svg {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   font-size: 14px;
   line-height: 21px;
-}
-.css-selector {
-    background: linear-gradient(108deg, #246655, #422466, #3dd4d2, #d43dcb, #753a58, #5f440e);
-    background-size: 1200% 1200%;
-    -webkit-animation: AnimationName 21s ease infinite;
-    -moz-animation: AnimationName 21s ease infinite;
-    -o-animation: AnimationName 21s ease infinite;
-    animation: AnimationName 21s ease infinite;
-}
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 49%}
-    50%{background-position:100% 52%}
-    100%{background-position:0% 49%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 49%}
-    50%{background-position:100% 52%}
-    100%{background-position:0% 49%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 49%}
-    50%{background-position:100% 52%}
-    100%{background-position:0% 49%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 49%}
-    50%{background-position:100% 52%}
-    100%{background-position:0% 49%}
+  display: block;
+  margin: 30px auto;
 }
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
-  fill: .css-selector;
+  fill: black;
   stroke: rgb(225, 228, 232);
   stroke-width: 1px;
   rx: 6px;
@@ -108,9 +126,9 @@ tr {
 
 <tr style="animation-delay: 150ms"><td><svg class="octicon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" width="16" height="16" role="img"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>Forks</td><td>395</td></tr>
 
-<tr style="animation-delay: 300ms"><td><svg class="octicon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z"></path></svg>All-time contributions</td><td>1,105</td></tr>
+<tr style="animation-delay: 300ms"><td><svg class="octicon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.5A2.5 2.5 0 013.5 0h8.75a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0V1.5h-8a1 1 0 00-1 1v6.708A2.492 2.492 0 013.5 9h3.25a.75.75 0 010 1.5H3.5a1 1 0 100 2h5.75a.75.75 0 010 1.5H3.5A2.5 2.5 0 011 11.5v-9zm13.23 7.79a.75.75 0 001.06-1.06l-2.505-2.505a.75.75 0 00-1.06 0L9.22 9.229a.75.75 0 001.06 1.061l1.225-1.224v6.184a.75.75 0 001.5 0V9.066l1.224 1.224z"></path></svg>All-time contributions</td><td>1,106</td></tr>
 
-<tr style="animation-delay: 450ms"><td><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8.75 1.75a.75.75 0 00-1.5 0V5H4a.75.75 0 000 1.5h3.25v3.25a.75.75 0 001.5 0V6.5H12A.75.75 0 0012 5H8.75V1.75zM4 13a.75.75 0 000 1.5h8a.75.75 0 100-1.5H4z"></path></svg>Lines of code changed</td><td>181,691</td></tr>
+<tr style="animation-delay: 450ms"><td><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8.75 1.75a.75.75 0 00-1.5 0V5H4a.75.75 0 000 1.5h3.25v3.25a.75.75 0 001.5 0V6.5H12A.75.75 0 0012 5H8.75V1.75zM4 13a.75.75 0 000 1.5h8a.75.75 0 100-1.5H4z"></path></svg>Lines of code changed</td><td>181,767</td></tr>
 
 <tr style="animation-delay: 600ms"><td><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"></path></svg>Repository views (past two weeks)</td><td>17,140</td></tr>
 
