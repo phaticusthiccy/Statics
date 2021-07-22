@@ -37,7 +37,7 @@ td {
   padding: 0.25em;
   font-size: 12px;
   line-height: 18px;
-  color: rgb(88, 96, 105);
+  color: rgb(18, 96, 105);
 }
 tr {
   transform: translateX(-200%);
