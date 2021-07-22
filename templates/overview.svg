@@ -47,7 +47,7 @@ tr {
   animation-fill-mode: forwards;
 }
 .octicon {
-  fill: rgb(88, 96, 105);
+  fill: rgb(88, 140, 105);
   margin-right: 1ch;
   vertical-align: top;
 }
