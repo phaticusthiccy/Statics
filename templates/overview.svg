@@ -1,11 +1,56 @@
-<svg width="360" height="210" xmlns="http://www.w3.org/2000/svg">
+<svg width="720" height="420" xmlns="http://www.w3.org/2000/svg">
 <style>
+           <defs>
+			<linearGradient id="gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+		      <stop offset="6.25%" style="stop-color:#87FFFE;"/>
+		      <stop offset="18.75%" style="stop-color:#88FF89;"/>
+		      <stop offset="31.25%" style="stop-color:#F8F58A;"/>
+		      <stop offset="43.75%" style="stop-color:#EF696A;"/>
+		      <stop offset="56.25%" style="stop-color:#F36ABA;"/>
+		      <stop offset="68.75%" style="stop-color:#EF696A;"/>
+		      <stop offset="81.25%" style="stop-color:#F8F58A;"/>
+		      <stop offset="93.75%" style="stop-color:#88FF89;"/>
+		      <stop offset="100%" style="stop-color:#87FFFE;"/>
+		    </linearGradient>
+	    </defs>
+
+	    <pattern id="pattern" x="0" y="0" width="400%" height="100%" patternUnits="userSpaceOnUse">
+	      <rect x="-150%" y="0" width="200%" height="100%" fill="url(#gradient)" transform="rotate(-65)">
+	        <animate attributeType="XML"
+	                 attributeName="x"
+	                 from="-150%" to="50%"
+	                 dur="6s"
+	                 repeatCount="indefinite"/>
+	      </rect>
+	      <rect x="-350%" y="0" width="200%" height="100%" fill="url(#gradient)" transform="rotate(-65)">
+	        <animate attributeType="XML"
+	                 attributeName="x"
+	                 from="-350%" to="-150%"
+	                 dur="6s"
+	                 repeatCount="indefinite"/>
+	      </rect>
+	    </pattern>
+    
+	    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	    	
+	        <g id="junglebug">
+	            <g id="Fill-1-Clipped">
+	                <mask id="mask-2" fill="white">
+	                    <use xlink:href="#path-1"></use>
+	                </mask>
+	                <g id="path-1"></g>
+	                <path d="M47.76201,37.2875647 L28.79811,46.8794704 L28.79811,28.2616913 L47.82321,18.6869108 C47.84481,18.8698798 47.76201,19.0555529 47.76201,19.2430286 L47.76201,37.2875647 Z M26.22231,24.0984688 L7.62291,14.7850728 L26.13591,5.48068984 L44.80461,14.7931847 L26.22231,24.0984688 Z M23.88141,46.8794704 L4.56561,37.2875648 L4.56561,19.227706 C4.56561,19.044737 4.65831,18.8644719 4.67811,18.6860094 L23.88141,28.2616913 L23.88141,46.8794704 Z M23.88141,70.860136 L7.29261,62.5931788 C5.66001,61.7756767 4.56561,60.1316588 4.56561,58.3037707 L4.56561,42.6495499 L23.88141,52.2414556 L23.88141,70.860136 Z M47.31201,10.5578563 L47.28321,10.5578563 L28.16361,1.07681355 C26.89821,0.444984388 25.38171,0.47292548 24.11811,1.10745862 L5.22621,10.6425809 C1.96911,12.2802892 -9e-05,15.5773379 -9e-05,19.227706 L-9e-05,58.3037707 C-9e-05,61.9604482 1.99701,65.2475824 5.26221,66.8825867 L23.88141,76.2221214 L23.88141,86.5269756 L28.79811,86.5269756 L28.79811,76.2221214 L28.79811,70.860136 L28.79811,52.2468637 L28.79811,52.2414556 L47.76201,42.6495499 L47.76201,58.3037707 C47.76201,60.1316588 46.73151,61.7756767 45.09891,62.5931788 L33.36291,68.461709 L33.36291,73.8236943 L47.30391,66.8825867 C50.57001,65.2475824 52.67871,61.9604482 52.67871,58.3037707 L52.67871,19.2430286 C52.67871,15.5800418 50.58621,12.3163423 47.31201,10.5578563 Z" id="Fill-1" fill="url(#pattern)" fill-rule="nonzero"></path>
+	            </g>
+	        </g>
+	    </g>
+
 svg {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
   font-size: 14px;
   line-height: 21px;
+  display: block;
+  margin: 30px auto;
 }
-
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
