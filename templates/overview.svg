@@ -6,7 +6,7 @@ svg {
   font-size: 14px;
   line-height: 21px;
 }
-.element {
+#element {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
   animation: pulse 5s infinite;
