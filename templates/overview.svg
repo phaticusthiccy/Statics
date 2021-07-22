@@ -225,7 +225,7 @@ tr {
   <div class="star"></div>
   <div class="star"></div>
 </div>
-<rect x="5" y="5" id="background" />
+<rect x="5" y="5" id="stars" />
 <g>
 <foreignObject x="21" y="21" width="318" height="168">
 <div xmlns="http://www.w3.org/1999/xhtml">
