@@ -7,8 +7,7 @@ svg {
   line-height: 21px;
 }
 #animback {
-    background: linear-gradient(108deg, #246655, #422466, #3dd4d2, #d43dcb, #753a58, #5f440e);
-    background-size: 1200% 1200%;
+    fill: linear-gradient(108deg, #246655, #422466, #3dd4d2, #d43dcb, #753a58, #5f440e);
     -webkit-animation: AnimationName 21s ease infinite;
     -moz-animation: AnimationName 21s ease infinite;
     -o-animation: AnimationName 21s ease infinite;
