@@ -37,7 +37,7 @@ svg {
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
-  fill: .css-selector;
+  fill: black;
   stroke: rgb(225, 228, 232);
   stroke-width: 1px;
   rx: 6px;
@@ -94,7 +94,7 @@ tr {
 }
 </style>
 <g>
-<rect x="5" y="5" id="background" />
+<rect x="5" y="5" id=".css-selector" />
 <g>
 <foreignObject x="21" y="21" width="318" height="168">
 <div xmlns="http://www.w3.org/1999/xhtml">
