@@ -9,7 +9,7 @@ svg {
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
-  background: linear-gradient(#e66465, #9198e5);
+  fill: linear-gradient(#e66465, #9198e5);
   rx: 6px;
   ry: 6px;
 }
