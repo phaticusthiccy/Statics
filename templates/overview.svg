@@ -5,34 +5,7 @@ svg {
   font-size: 14px;
   line-height: 21px;
 }
-.css-selector {
-    background: linear-gradient(108deg, #246655, #422466, #3dd4d2, #d43dcb, #753a58, #5f440e);
-    background-size: 1200% 1200%;
-    -webkit-animation: AnimationName 21s ease infinite;
-    -moz-animation: AnimationName 21s ease infinite;
-    -o-animation: AnimationName 21s ease infinite;
-    animation: AnimationName 21s ease infinite;
-}
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 49%}
-    50%{background-position:100% 52%}
-    100%{background-position:0% 49%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 49%}
-    50%{background-position:100% 52%}
-    100%{background-position:0% 49%}
-}
-@-o-keyframes AnimationName {
-    0%{background-position:0% 49%}
-    50%{background-position:100% 52%}
-    100%{background-position:0% 49%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 49%}
-    50%{background-position:100% 52%}
-    100%{background-position:0% 49%}
-}
+
 
 #background {
   width: calc(100% - 10px);
@@ -94,7 +67,7 @@ tr {
 }
 </style>
 <g>
-<rect x="5" y="5" id=".css-selector" />
+<rect x="5" y="5" id="background" />
 <g>
 <foreignObject x="21" y="21" width="318" height="168">
 <div xmlns="http://www.w3.org/1999/xhtml">
