@@ -5,6 +5,7 @@ svg {
   font-size: 14px;
   line-height: 21px;
 }
+
 #background {
   width: calc(100% - 10px);
   height: calc(100% - 10px);
@@ -14,6 +15,7 @@ svg {
   rx: 6px;
   ry: 6px;
 }
+
 foreignObject {
   width: calc(100% - 10px - 32px);
   height: calc(100% - 10px - 32px);
